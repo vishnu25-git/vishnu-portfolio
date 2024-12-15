@@ -3,7 +3,61 @@ body {
 }
 
 .banner {
-    background-image: url(images/white-minimalist.jpg);
+    background-image: url(/images/mountains-black-and-white-ap.jpg);
+    padding: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.shine-text {
+    position: relative;
+    color: #fff; /* Set a base color for the text */
+    font-weight: bold; /* Make the text bold for better visibility */
+    overflow: hidden; /* Hide overflow to keep the shine effect contained */
+}
+.shine-text {
+    position: relative;
+    color: #fff; /* Set a base color for the text */
+    font-weight: bold; /* Make the text bold for better visibility */
+    overflow: hidden; /* Hide overflow to keep the shine effect contained */
+}
+
+.shine-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start from the left */
+    width: 200%; /* Cover more than the full width of the text */
+    height: 100%; /* Cover the full height of the text */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)); /* Lower transparency */
+    animation: shine 3s infinite; /* Animation for shine effect */
+}
+
+@keyframes shine {
+    0% {
+        left: -100%; /* Start from the left */
+    }
+    50% {
+        left: 100%; /* Move to the right */
+    }
+    100% {
+        left: -100%; /* Reset to the left */
+    }
+}
+
+.btn {
+    position: relative; /* Ensure the button is positioned relative for the shine effect */
+    overflow: hidden; /* Hide overflow to keep the shine effect contained */
+}
+#about{
+    color: white;
+    background-color: rgb(5, 5, 5);
+}
+.custom-margin {
+    margin-left: 150px; /* Adjust this value as needed */
+}
+#skills {
+    color: white;
+    background-image: url(/images/final-b&w\ background\ bottom.jpg); /* Replace with the path to your image */
     padding: 280px;
     background-size: cover;
     background-repeat: no-repeat;
