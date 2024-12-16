@@ -1,0 +1,10 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.banner {
+    background-image: url(images/white-minimalist.jpg);
+    padding: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
