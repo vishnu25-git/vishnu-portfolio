@@ -3,7 +3,7 @@ body {
 }
 
 .banner {
-    background-image: url(/images/mountains-black-and-white-ap.jpg);
+    background-image: url(/Assets/images/mountains-black-and-white-ap.jpg);
     padding: 280px;
     background-size: cover;
     background-repeat: no-repeat;
